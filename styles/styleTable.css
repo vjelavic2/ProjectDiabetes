@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&family=Poppins:wght@200;500&display=swap');
+
+
+*{
+    padding:0;
+    margin: 0;
+    font-family: 'Lora', serif;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+
+body{
+    
+    background-color: #ceecf3;
+    font-family: 'Lora', serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.menu-bar {
+  background: #36648b;
+  text-align: center;
+}
+
+
+.menu-bar ul {
+  display: flex;
+  list-style: none; 
+  color: #fff;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+.menu-bar ul li {
+  margin: 13px;
+  padding: 13px;
+  flex: 1 0 120px; 
+  position: relative;
+}
+
+
+.menu-bar ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.active,
+.menu-bar ul li:hover {
+  background: #1FBCDA;
+  border-radius: 5px;
+}
+
+
+.sub-menu {
+  display: none; 
+}
+
+
+.menu-bar ul li:hover .sub-menu {
+    display: block;
+    position:absolute;
+    background-color: #1FBCDA;
+    left: 0;
+    right:0;
+}
+  
+
+.menu-bar ul li:hover .sub-menu ul {
+  display: block;
+  margin: 2px;
+}
+
+
+.menu-bar ul li:hover .sub-menu ul li {
+  padding: 10px;
+  border-bottom: 1px dotted #fff;
+  border-radius: 0;
+  text-align: center;
+}
+
+
+.menu-bar ul li:hover .sub-menu ul li:last-child {
+  border-bottom: none; 
+}
+
+
+.menu-bar ul li:hover .sub-menu ul li a:hover {
+  color: #36648b;
+}
+
+  
+
+
+
+.content-table{
+    margin-left: auto;
+    margin-top: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 100%;
+}
+
+
+.content-table{
+    border-collapse: collapse; 
+    margin-left: auto;
+    margin-top: 20px;
+    margin-right:auto;
+    margin-bottom: 0;
+    font-size:0.9em;
+    min-width:400px;
+    border-radius: 5px 0 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+
+.content-table tr th{
+    background-color: #36648b;
+    color: white;
+    text-align: left;
+    font-weight: bold;
+}
+
+
+.content-table th, .content-table td{
+    padding: 12px 15px;
+
+}
+
+
+.content-table tr{
+    border-bottom: 1px solid #36648b;
+}
+
+
+.content-table tr:nth-of-type(even){
+background-color: #96ced9;
+}
+
+
+.content-table tbody tr:last-of-type{
+    border-bottom: 2px solid #36648b;
+}
+
+
+.content-table tr:hover{
+    font-weight: bold;
+    color:#1FBCDA;
+}
+
+
+
+
+
+.footer { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  z-index: 0;
+}
+.footer a {
+  text-decoration: none;
+  border-bottom: none;
+  margin: 12px;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    .menu-bar ul li {
+      flex-basis: 50%;
+    }
+    
+    .content-table {
+      font-size: 0.7em;
+    }
+    
+    .content-table tr th,
+    .content-table th,
+    .content-table td {
+      padding: 8px 10px;
+    }
+  
+  }
+  

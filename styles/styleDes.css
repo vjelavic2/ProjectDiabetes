@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&family=Poppins:wght@200;500&display=swap');
+
+* {
+  padding: 0; 
+  margin: 0;
+  font-family: 'Lora', serif;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+body {
+  background-image: url(../poz3.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: 'Lora', serif;
+}
+
+
+.menu-bar {
+  background: #36648b;
+  text-align: center;
+}
+
+
+.menu-bar ul {
+  display: flex;
+  list-style: none; 
+  color: #fff;
+  flex-wrap: wrap; 
+}
+
+
+.menu-bar ul li {
+  margin: 13px;
+  padding: 13px;
+  flex: 1 0 120px;
+  position: relative;
+}
+
+
+.active,
+.menu-bar ul li:hover {
+  background: #1FBCDA;
+  border-radius: 5px;
+}
+
+
+.menu-bar ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+
+.sub-menu {
+  display: none; 
+}
+
+
+.menu-bar ul li:hover .sub-menu {
+    display: block;
+    position:absolute;
+    background-color: #1FBCDA;
+    left: 0;
+    right:0;
+  }
+  
+  
+.menu-bar ul li:hover .sub-menu ul {
+  margin: 5px;
+}
+
+
+.menu-bar ul li:hover .sub-menu ul li {
+  padding: 10px;
+  border-bottom: 1px dotted #fff; 
+  border-radius: 5px; 
+  text-align: center;
+}
+
+
+.menu-bar ul li:hover .sub-menu ul li:last-child {
+  border-bottom: none; 
+}
+
+
+.menu-bar ul li:hover .sub-menu ul li a:hover {
+  color: #36648b;
+}
+
+
+.title{
+  margin-left: 13%;
+  margin-top: 13%;
+  
+}
+
+
+.title h1{
+    font-size: 60px ;
+    font-weight: 500;
+    margin-top: 24px;
+    margin-bottom: 15px;
+    color:#36648b;
+}
+
+
+.title p{
+    font-size: 24px ;
+    font-weight: 700;
+    color:#36648b;
+}
+
+
+@media screen and (max-width: 768px) {
+    .menu-bar ul li {
+      flex-basis: 50%; 
+    }
+    .title{
+      margin-left: 5%;
+      margin-top: 40%;
+
+    }
+    .title h1 {
+      font-size: 8vw;
+    }
+  
+    .title p {
+      font-size: 3vw;
+    }
+  }

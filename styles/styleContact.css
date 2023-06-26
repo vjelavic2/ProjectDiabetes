@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&family=Poppins:wght@200;500&display=swap');
+
+* {
+  padding:0;
+    margin: 0;
+  box-sizing: border-box;
+  font-family: 'Lora', serif;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+body {
+  font-family: 'Lora', serif;
+  background-color: #ceecf3;
+}
+
+
+.menu-bar {
+  background: #36648b;
+  text-align: center;
+}
+
+
+.menu-bar ul {
+  display: flex;
+  list-style: none;
+  color: #fff;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+.menu-bar ul li {
+  margin: 13px;
+  padding: 13px;
+  flex: 1 0 120px; 
+  position: relative;
+}
+
+
+.menu-bar ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+
+.active,
+.menu-bar ul li:hover {
+  background: #1FBCDA;
+  border-radius: 5px;
+}
+
+
+.sub-menu {
+  display: none; 
+}
+
+
+.menu-bar ul li:hover .sub-menu {
+    display: block;
+    position:absolute;
+    background-color: #1FBCDA;
+    left: 0;
+    right:0;
+}
+  
+
+.menu-bar ul li:hover .sub-menu ul {
+  display: block;
+  margin: 2px;
+}
+
+
+.menu-bar ul li:hover .sub-menu ul li {
+  padding: 10px;
+  border-bottom: 1px dotted #fff;
+  border-radius: 0;
+  text-align: center;
+}
+
+
+.menu-bar ul li:hover .sub-menu ul li:last-child {
+  border-bottom: none; 
+}
+
+
+.menu-bar ul li:hover .sub-menu ul li a:hover {
+  color: #36648b;
+}
+
+
+
+
+
+
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.title h2{
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px ;
+    font-weight: 100;
+    margin-top: 24px;
+    margin-bottom: 15px;
+    color:#36648b;
+}
+
+
+.title h3{
+  text-align: center;
+  font-size: 20px ;
+   font-weight: 100;
+  color:#36648b;
+}
+
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color:#36648b;
+}
+
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+
+
+.form-group input[type="submit"] {
+  background-color: #36648b;
+  color: #fff;
+  cursor: pointer;
+}
+
+
+
+
+@media screen and (max-width: 480px) {
+  .menu-bar ul li {
+    flex-basis: 50%;
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    padding: 5px;
+  }
+}
